@@ -10,5 +10,6 @@ steps:
     enableProxy: false
     enableSastScan: true
     CheckmarxService: 'CxApacTrialServer'
+    fullTeamName: '/CxServer/SP'
     generatePDFReport: true
     enableDependencyScan: false
