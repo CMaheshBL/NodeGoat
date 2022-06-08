@@ -1,0 +1,14 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+steps:
+- task: Application security testing@2022
+  inputs:
+    projectName: 'NodeGoat'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'CxApacTrialServer'
+    generatePDFReport: true
+    enableDependencyScan: false
